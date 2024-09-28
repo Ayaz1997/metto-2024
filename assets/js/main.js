@@ -555,14 +555,14 @@
     *****************************/
    function init() {
     var mapOptions = {
-        zoom: 11,
-        scrollwheel: false,
-        center: new google.maps.LatLng(40.709896, -73.995481),
+        zoom: 20,
+        scrollwheel: true,
+        center: new google.maps.LatLng(20.477140744618218, 85.85167148255438),
     };
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var marker = new google.maps.Marker({
-        position: new google.maps.LatLng(40.709896, -73.995481),
+        position: new google.maps.LatLng(20.477140744618218, 85.85167148255438),
         map: map,
         icon: 'assets/img/icon/map-point.png',
         animation:google.maps.Animation.BOUNCE,
