@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Metto Super Market</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ::::::::::::::Favicon icon::::::::::::::-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+    <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/plaza-icon.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    
+    <!-- Plugin CSS Files -->
+    <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/plugin/material-scrolltop.css">
+    <link rel="stylesheet" href="assets/css/plugin/price_range_style.css">
+    <link rel="stylesheet" href="assets/css/plugin/in-number.css">
+    <link rel="stylesheet" href="assets/css/plugin/venobox.min.css">
+    <link rel="stylesheet" href="assets/css/plugin/jquery.lineProgressbar.css">
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css"/>
+    <link rel="stylesheet" href="assets/css/plugin/plugins.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.min.css"> -->
+
+    <!-- Main Style CSS File -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- ::::::  Start Header Section  ::::::  -->
+    <header>
+        <!--  Start Large Header Section   -->
+        <div class="header d-none d-lg-block">
+            <!-- Start Header Top area -->
+            <div class="header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header__top-content d-flex justify-content-between align-items-center">
+                                <div class="header__top-content--left">
+                                    Follow us on:
+                                    <a href="#" class="white-font"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="white-font"><i class="fab"></i></a>
+                                    <a href="#" class="white-font"><i class="fab fa-instagram"></i></a>
+                                    <a href="#" class="white-font"><i class="fab"></i></a>
+                                    <a href="#" class="white-font"><i class="fab fa-twitter"></i></a>
+                                </div>
+                                <ul class="header__top-content--right user-set-role d-flex">
+                                    <a href="tel:+919820482438" class="white-font">Call Us: 6371212152</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Start Header Top area -->
+
+            <!-- Start Header Center area -->
+            <div class="header__center sticky-header p-tb-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-between align-items-center">
+                            <!-- Start Logo -->
+                            <div class="header__logo">
+                                <a href="index.html" class="header__logo-link img-responsive">
+                                    <img class="header__logo-img img-fluid" src="assets/img/logo/logo-metto.png" alt="">
+                                </a>
+                            </div> <!-- End Logo -->
+
+                             <!-- Start Header Menu -->
+                             <div class="header-menu">
+                                <nav>
+                                    <ul class="header__nav">
+                                        <li class="header__nav-item pos-relative">
+                                            <a href="index.html" class="header__nav-link">Home</a>
+                                        </li>
+                                        <li class="header__nav-item pos-relative">
+                                            <a href="about.html" class="header__nav-link">About Us</a>
+                                        </li>
+                                        <li class="header__nav-item pos-relative">
+                                            <a href="shop-now.html" class="header__nav-link">Shop Now</a>
+                                        </li>
+                                        <li class="header__nav-item pos-relative">
+                                            <a href="franchise.html" class="header__nav-link">Franchise</a>
+                                        </li>
+                                        <li class="header__nav-item pos-relative">
+                                            <a href="contact.html" class="header__nav-link">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div> 
+                            <!-- End Header Menu -->
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- End Header Center area -->
+                
+        </div> 
+        <!--  End Large Header Section  -->
+
+        <!--  Start Mobile Header Section   -->
+        <div class="header__mobile mobile-header--1 d-block d-lg-none p-tb-20">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <ul class="header__mobile--leftside d-flex align-items-center justify-content-start">
+                            <li>
+                                <div class="header__mobile-logo">
+                                    <a href="index.html" class="header__mobile-logo-link">
+                                        <img src="assets/img/logo/logo-metto.png" alt="" class="header__mobile-logo-img">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Menu Hamburger -->
+                            <li><a href="#offcanvas-mobile-menu" class="offcanvas-toggle"><i class="far fa-bars"></i></a></li>
+                        </ul>   
+                        <!-- Menu Hamburger -->
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!--  End Mobile Header Section   -->
+        
+         <!--  Start Mobile-offcanvas Menu Section   -->
+        <div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
+            <div class="offcanvas__top">
+                <span class="offcanvas__top-text"></span>
+                <button class="offcanvas-close"><i class="fal fa-times"></i></button>
+            </div>
+            <!-- Off Canvas Menu -->
+             <div class="offcanvas-inner">
+                <div class="offcanvas-menu">
+                    <ul>
+                        <li><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="about.html"><span>About Us</span></a></li>
+                        <li><a href="#"><span>Shop Now</span></a></li>
+                        <li><a href="franchise.html"><span>Franchise</span></a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="offcanvas__social-nav m-t-50">
+                <li class="offcanvas__social-list"><a href="#" class="offcanvas__social-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="offcanvas__social-list"><a href="#" class="offcanvas__social-link"><i class="fab fa-instagram"></i></a></li>
+                <li class="offcanvas__social-list"><a href="#" class="offcanvas__social-link"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div> 
+        <!--  End Mobile-offcanvas Menu Section   -->
+
+    <!-- ::::::  Start  Breadcrumb Section  ::::::  -->
+    <div class="page-breadcrumb">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <ul class="page-breadcrumb__menu">
+                        <li class="page-breadcrumb__nav"><a href="index.html">Home</a></li>
+                        <li class="page-breadcrumb__nav active">Categories</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> <!-- ::::::  End  Breadcrumb Section  ::::::  -->
+
+    <!-- ::::::  Start  Main Container Section  ::::::  -->
+
+<div class="container">
+    <div class="main">
+  
+
+
+        <p>
+            Metto Supermarket is here to provide you the joy of shopping with our healthy and quality product list. Walk into our stores that cover almost all essential groceries & daily merchandise. 
+       
+        </p>
+        <p>
+            Our mart promises to provide product at the affordable price under customer based schemes. We offer 100% organic and well-known brand for its quality. We have a special section that list 25 unique products representing different regional food types of India. Every walk-in customer will have its customer loyalty discounts based on its shopping, to make it a happy shopping. 
+        </p>
+        <div class="spacer_10"></div>
+        <!--    <img src="/images/about_us/our_philosophy_banner.jpg" class="img_100"> -->
+
+    </div>
+
+</div>
+<section class="pg-team section-pad">
+    <div class="container">
+        <div class="main">
+            <div class="heading" style="text-align:center;">Store Categories</div>
+            
+        </div>
+        <div class="row pad">
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <!---->
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/dairy_&_frozen_02_03_2016_03_23_46.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <!---->
+
+
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Dairy </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/fruits_&_vegetables_27_02_2016_12_41_12.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Fruits & Vegetables</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/daily_essentials_02_03_2016_04_35_25.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Staples</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/spices.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Spices</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/grocery_&_staples_27_02_2016_12_44_29.png" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Grocery</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <!---->
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/healthy-snacks.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <!---->
+
+
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Breakfast</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/MM.jpeg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Midnight Snacks</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/processedfood.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Processed food</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/organicproduct.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Organic</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/luggage_27_02_2016_12_42_36.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">FMCG</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/frozen-food.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Frozen</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/bed_&_bath_02_03_2016_03_23_10.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Home Decore </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/apparel_for_men_27_02_2016_12_43_47.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Garments</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <!---->
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/home_&_personal_care_02_03_2016_03_24_24.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+                    <!---->
+
+
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Toiletries</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/home__appliances_06_03_2016_10_01_01.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Home  Appliances</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="team-box">
+                    <div class="team-img service-wrapper">
+                        <img src="/assets/img/categories/cosmetics.jpg" style="width:253px;height:216px;" alt="" class="img-responsive">
+                        <a href="/Home/vendorinformation">
+                            <div class="overlay">  </div>
+                        </a>
+                    </div>
+
+                    <div class="team-data">
+                        <a href="/Home/vendorinformation">
+                            <div class="side-head">Comatics</div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section> <!-- /node -->
+
+    <!-- ::::::  Start  Footer ::::::  -->
+    <footer class="footer m-t-100">
+        <div class="container">
+            <!-- Start Footer Top Section --> 
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="footer__about">
+                            <div class="footer__logo">
+                                <a href="index.html" class="footer__logo-link">
+                                    <img src="assets/img/logo/logo-metto.png" alt="" class="footer__logo-img">
+                                </a>
+                            </div>
+                            <ul class="footer__address">
+                                <!-- <li class="footer__address-item"><i class="fa fa-home"></i>Shelter Chhak, Ground floor, Metro Corner Apartment, Cuttack - 753002.</li>
+                                <li class="footer__address-item"><i class="fa fa-home"></i>CDA-9, Plot No.: 6B/933, Sector-9, Markat Nagar, Cuttack, 753014.</li> -->
+                                <li class="footer__address-item"><i class="fa fa-phone-alt"></i>+918249623224</li>
+                                <li class="footer__address-item"><i class="fa fa-phone-alt"></i>+919820482438</li>
+                                <li class="footer__address-item"><i class="fa fa-envelope"></i>support@somemail.com</li>
+                            </ul>
+                            <ul class="footer__social-nav">
+                                <li class="footer__social-list"><a href="#" class="footer__social-link"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="footer__social-list"><a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a></li>
+                                <li class="footer__social-list"><a href="#" class="footer__social-link"><i class="fab fa-youtube"></i></a></li>
+                                <li class="footer__social-list"><a href="#" class="footer__social-link"><i class="fab fa-google-plus-g"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12"> 
+                        <div class="footer__menu">
+                            <h4 class="footer__nav-title footer__nav-title--dash footer__nav-title--dash-red">HEAD OFFICE</h4>
+                            <li class="footer__address-item"><i class="fa fa-home"></i>Shelter Chhak, Ground floor, Metro Corner Apartment, Cuttack - 753002.</li>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                        <div class="footer__menu">
+                            <h4 class="footer__nav-title footer__nav-title--dash footer__nav-title--dash-red">CDA BRANCH</h4>
+                            <li class="footer__address-item"><i class="fa fa-home"></i>CDA-9, Plot No.: 6B/933, Sector-9, Markat Nagar, Cuttack, 753014.</li>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                        <div class="footer__menu">
+                            <h4 class="footer__nav-title footer__nav-title--dash footer__nav-title--dash-red">SITE PAGES</h4>
+                            <li class="footer__list"><a href="index.html">HOME</a></li>
+                            <li class="footer__list"><a href="#">ABOUT US</a></li>
+                            <li class="footer__list"><a href="#">JOIN US</a></li>
+                            <li class="footer__list"><a href="#">CATEGORIES</a></li>
+                            <li class="footer__list"><a href="#">OFFER ZONE</a></li>
+                            <li class="footer__list"><a href="#">GALLERY</a></li>
+                            <li class="footer__list"><a href="#">CONTACT US</a></li>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                        <div class="footer__menu">
+                            <h4 class="footer__nav-title footer__nav-title--dash footer__nav-title--dash-red">OPENING TIME</h4>
+                            <ul class="footer__nav">
+                                <li class="footer__list">Mon - Fri: 8AM - 10PM</li>
+                                <li class="footer__list">Sat: 9AM-8PM</li>
+                                <li class="footer__list">Suns: 14hPM-18hPM</li>
+                                <li class="footer__list">Mon - Fri: 8AM - 10PM</li>
+                                <li class="footer__list">We Work All The Holidays</li>
+                                <li class="footer__list"><a href="" class="footer__link font--bold">Download our app</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- End Footer Top Section -->
+            <!-- Start Footer Bottom Section --> 
+            <div class="footer__bottom">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <!-- Start Footer Copyright Text -->
+                        <div class="footer__copyright-text">
+                            <p>Copyright &copy; <a href="https://mettosupermarket.com/">Metto Super Market</a>. All Rights Reserved</p>
+                        </div> <!-- End Footer Copyright Text -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                         <!-- Start Footer Payment Logo -->
+                        <div class="footer__payment">
+                            <a href="#" class="footer__payment-link">
+                                <img src="assets/img/company-logo/payment.png" alt="" class="footer__payment-img">
+                            </a>
+                        </div>  <!-- End Footer Payment Logo -->
+                    </div>
+                </div>
+            </div> <!-- End Footer Bottom Section --> 
+        </div>
+    </footer> 
+    <!-- ::::::  End  Footer ::::::  -->
+    
+    <!-- material-scrolltop button -->
+    <button class="material-scrolltop" type="button"></button>
+
+    
+    <!-- Vendor JS Files -->
+    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugins JS Files -->
+    <script src="assets/js/plugin/slick.min.js"></script>
+    <script src="assets/js/plugin/jquery.countdown.min.js"></script>
+    <script src="assets/js/plugin/material-scrolltop.js"></script>
+    <script src="assets/js/plugin/price_range_script.js"></script>
+    <script src="assets/js/plugin/in-number.js"></script>
+    <script src="assets/js/plugin/jquery.elevateZoom-3.0.8.min.js"></script>
+    <script src="assets/js/plugin/venobox.min.js"></script>
+    <script src="assets/js/plugin/jquery.waypoints.js"></script>
+    <script src="assets/js/plugin/jquery.lineProgressbar.js"></script>
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <!-- <script src="assets/js/vendor/vendor.min.js"></script>
+    <script src="assets/js/plugin/plugins.min.js"></script> -->
+
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

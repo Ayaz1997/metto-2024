@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Metto Super Market</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- ::::::::::::::Favicon icon::::::::::::::-->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+    <!-- ::::::::::::::All CSS Files here :::::::::::::: -->
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/vendor/plaza-icon.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    
+    <!-- Plugin CSS Files -->
+    <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/plugin/material-scrolltop.css">
+    <link rel="stylesheet" href="assets/css/plugin/price_range_style.css">
+    <link rel="stylesheet" href="assets/css/plugin/in-number.css">
+    <link rel="stylesheet" href="assets/css/plugin/venobox.min.css">
+    <link rel="stylesheet" href="assets/css/plugin/jquery.lineProgressbar.css">
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <!-- <link rel="stylesheet" href="assets/css/vendor/vendor.min.css"/>
+    <link rel="stylesheet" href="assets/css/plugin/plugins.min.css"/>
+    <link rel="stylesheet" href="assets/css/main.min.css"> -->
+
+    <!-- Main Style CSS File -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Sticky button -->
+    <style>
+        .play_button
+        {
+        display:flex;
+        }
+
+        .buttons {
+        position: fixed;
+        top: auto;
+        right: 0;
+        z-index: 999;
+        padding: 0px;
+        bottom: 150px;
+        }
+
+        .buttons a {
+        background: #D60000;
+        color: #fff !important;
+        font-size: 22px;
+        padding: 13px;
+        display: inline-block;
+        width: 186px;
+        text-align: center;
+        margin-bottom: 10;
+        border-radius: 50px 0px 0px 50px;
+        text-decoration: unset !important;
+        text-transform: capitalize;
+        font-family: 'Poppins';
+        }
+    </style>
+    <!-- Sticky button -->
+</head>
+
+<body>
+    <!-- ::::::  Start Header Section  ::::::  -->
+    <header>
+        <!--  Start Large Header Section   -->
+        <div class="header d-none d-lg-block">
+            <!-- Start Header Top area -->
+            <div class="header__top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="header__top-content d-flex justify-content-between align-items-center">
+                                <div class="header__top-content--left">
+                                    Follow us on:
+                                    <a href="https://m.facebook.com/mettosupermarketofficial/" class="white-font"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#" class="white-font"><i class="fab"></i></a>
+                                    <a href="https://www.linkedin.com/posts/metto-supermarket_awarded-as-best-supermarket-chain-in-east-activity-7245389728185802752-Nb3b?utm_source=share&utm_medium=member_android" class="white-font"><i class="fab fa-linkedin"></i></a>
+                                    <a href="#" class="white-font"><i class="fab"></i></a>
+                                    <a href="https://x.com/MettoSuprmarket?t=PbOzywkvPpH1h7M6cZrLqg&s=08" class="white-font"><i class="fab fa-twitter"></i></a>
+                                </div>
+                                <ul class="header__top-content--right user-set-role d-flex">
+                                    <a href="tel:6371212152" class="white-font">Call Us: 6371212152</a>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- Start Header Top area -->
+
+            <!-- Start Header Center area -->
+            <div class="header__center sticky-header p-tb-10">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-between align-items-center">
+                            <!-- Start Logo -->
+                            <div class="header__logo">
+                                <a href="index.html" class="header__logo-link img-responsive">
+                                    <img class="header__logo-img img-fluid" src="assets/img/logo/logo-metto.png" alt="">
+                                </a>
+                            </div> <!-- End Logo -->
+
+                             <!-- Start Header Menu -->
+                             <div class="header-menu">
+                                <nav>
+                                    <ul class="header__nav">
+                                        <li class="header__nav-item pos-relative">
+                                            <a href="index.html" class="header__nav-link">Home</a>
+                                        </li>
+                                        <li class="header__nav-item pos-relative">
+                                            <a href="about.html" class="header__nav-link">About Us</a>
+                                        </li>
+                                        <!-- <li class="header__nav-item pos-relative">
+                                            <a href="shop-now.html" class="header__nav-link">Shop Now</a>
+                                        </li>
+                                        <li class="header__nav-item pos-relative">
+                                            <a href="franchise.html" class="header__nav-link">Franchise</a>
+                                        </li> -->
+                                        <li class="header__nav-item pos-relative">
+                                            <a href="contact.html" class="header__nav-link">Contact Us</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div> 
+                            <!-- End Header Menu -->
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- End Header Center area -->
+                
+        </div> 
+        <!--  End Large Header Section  -->
+
+        <!--  Start Mobile Header Section   -->
+        <div class="header__mobile mobile-header--1 d-block d-lg-none p-tb-20">
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-12 d-flex align-items-center justify-content-between">
+                        <ul class="header__mobile--leftside d-flex align-items-center justify-content-start">
+                            <li>
+                                <div class="header__mobile-logo">
+                                    <a href="index.html" class="header__mobile-logo-link">
+                                        <img src="assets/img/logo/logo-metto.png" alt="" class="header__mobile-logo-img">
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- Menu Hamburger -->
+                            <li><a href="#offcanvas-mobile-menu" class="offcanvas-toggle"><i class="far fa-bars"></i></a></li>
+                        </ul>   
+                        <!-- Menu Hamburger -->
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!--  End Mobile Header Section   -->
+        
+         <!--  Start Mobile-offcanvas Menu Section   -->
+        <div id="offcanvas-mobile-menu" class="offcanvas offcanvas-mobile-menu">
+            <div class="offcanvas__top">
+                <span class="offcanvas__top-text"></span>
+                <button class="offcanvas-close"><i class="fal fa-times"></i></button>
+            </div>
+            <!-- Off Canvas Menu -->
+             <div class="offcanvas-inner">
+                <div class="offcanvas-menu">
+                    <ul>
+                        <li><a href="index.html"><span>Home</span></a></li>
+                        <li><a href="about.html"><span>About Us</span></a></li>
+                        <!-- <li><a href="#"><span>Shop Now</span></a></li>
+                        <li><a href="franchise.html"><span>Franchise</span></a></li> -->
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <ul class="offcanvas__social-nav m-t-50">
+                <li class="offcanvas__social-list"><a href="https://m.facebook.com/mettosupermarketofficial/" class="offcanvas__social-link"><i class="fab fa-facebook-f"></i></a></li>
+                <li class="offcanvas__social-list"><a href="https://www.linkedin.com/posts/metto-supermarket_awarded-as-best-supermarket-chain-in-east-activity-7245389728185802752-Nb3b?utm_source=share&utm_medium=member_android" class="offcanvas__social-link"><i class="fab fa-linkedin"></i></a></li>
+                <li class="offcanvas__social-list"><a href="https://x.com/MettoSuprmarket?t=PbOzywkvPpH1h7M6cZrLqg&s=08" class="offcanvas__social-link"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div> 
+        <!--  End Mobile-offcanvas Menu Section   -->
+    </header>  
+    
+    <!-- :::::: End Header Section ::::::  -->  
+
+    <!-- :::::: Start Main Container Wrapper :::::: -->
+    <main id="main-container" class="main-container">
+        <!-- ::::::  Start Hero Section  ::::::  -->
+        <div class="hero slider-dot-fix slider-dot slider-dot-fix slider-dot--center slider-dot-size--medium slider-dot-circle  slider-dot-style--fill slider-dot-style--fill-white-active-green dot-gap__X--10">
+            <!-- Start Single Hero Slide -->
+            <div class="hero-slider">
+                <img src="assets/img/hero/slider-1.png" alt="">
+                <div class="hero__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <div class="hero__content--inner">
+                                    <!-- <h6 class="title__hero title__hero--tiny text-uppercase">No. 1 Retail Industry</h6> -->
+                                    <h1 class="title__hero title__hero--xlarge font--regular text-uppercase">Your Favourite<br>  Neighbourhood Store</h1>
+                                    <!-- <h4 class="title__hero title__hero--small font--regular">Small Changes Big Difference</h4> -->
+                                    <!-- <a href="product-single-default.html" class="btn btn--large btn--radius btn--black btn--black-hover-green font--bold text-uppercase">Learn More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- End Single Hero Slide -->
+
+            <!-- Start Single Hero Slide -->
+            <div class="hero-slider">
+                <img src="assets/img/hero/slider-2.png" alt="">
+                <div class="hero__content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-8">
+                                <div class="hero__content--inner">
+                                    <!-- <h6 class="title__hero title__hero--tiny text-uppercase">No. 1 Retail Industry</h6> -->
+                                    <h1 class="title__hero title__hero--xlarge font--regular text-uppercase">Your Favourite <br> Neighbourhood Store</h1>
+                                    <!-- <h4 class="title__hero title__hero--small font--regular">Small Changes Big Difference</h4>
+                                    <a href="product-single-default.html" class="btn btn--large btn--radius btn--black btn--black-hover-green font--bold text-uppercase">Learn More</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- End Single Hero Slide -->
+        </div> <!-- ::::::  End Hero Section  ::::::  -->
+
+        <!-- ::::::  Start banner Section  ::::::  -->
+        <div class="banner m-t-30">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="banner__box">
+                            <!-- Start Single Banner Item -->
+                            <div class="banner__box--single banner__box--single-text-style-1 pos-relative">
+                                <a href="product-single-default.html" class="banner__link">
+                                    <img src="assets/img/banner/size-wide/discount-banner.jpeg" alt="" class="banner__img">
+                                </a>
+                                <div class="banner__content banner__content--center pos-absolute">
+                                    <!-- <h6 class="banner__title  font--regular letter-spacing--4  text-center m-b-10">Green Vegetable</h6> -->
+                                    <!-- <h2 class="banner__title banner__title--large font--medium letter-spacing--4  text-uppercase center-text">Discount every sunday</h2> -->
+                                    <!--<h6 class="banner__title font--regular letter-spacing--4 m-b-20">* On every shopping of 1500 & above</h6>-->
+                                    <!-- <div class="text-center">
+                                        <a href="product-single-default.html" class="btn btn--medium btn--radius btn--transparent btn--border-black btn--border-black-hover-green font--light text-uppercase">Learn More</a>
+                                    </div> -->
+                                </div>
+                            </div> <!-- End Single Banner Item -->
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <div class="banner__box">
+                            <!-- Start Single Banner Item -->
+                            <div class="banner__box--single banner__box--single-text-style-1 pos-relative">
+                                <a href="product-single-default.html" class="banner__link">
+                                    <img src="assets/img/banner/size-wide/free-banner.jpeg" alt="" class="banner__img">
+                                </a>
+                                <div class="banner__content banner__content--center pos-absolute">
+                                    <!-- <h6 class="banner__title letter-spacing--4 font--regular text-center m-b-10">Fresh herbs</h6> -->
+                                    <!-- <h2 class="banner__title banner__title--large letter-spacing--4 font--medium text-uppercase center-text">Free shopping membership</h2> -->
+                                    <!-- <h6 class="banner__title letter-spacing--4 font--regular text-center m-b-20">Healthy Food</h6> -->
+                                    <!-- <div class="text-center">
+                                        <a href="product-single-default.html" class="btn btn--medium btn--radius btn--transparent btn--border-black btn--border-black-hover-green font--light text-uppercase">Learn More</a>
+                                    </div> -->
+                                </div>
+                            </div> <!-- End Single Banner Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- ::::::  End banner Section  ::::::  -->
+    </div>
+
+    <!--Custom section-->
+        <!--<div class="newsletter__bg">
+
+            <div class="container-sec">
+
+                <div class="row" style="align-items: center;">
+
+                    <div class="col-lg-7 col-12">
+                        <div class="app-content">
+                            <h2 style="text-align:left; font-size: 60px; padding-top: 50px; font:weight: bold; margin-left: 60px;">Now Order Groceries Online</h2>
+                            <div class="play_button" style="width: 400px; margin-left: 60px;">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-6" style="background-color: red;">
+                      <div class="newsletter__bg" style="width: 350px; margin: auto;">
+                            <img src="/assets/img/banner/phoneSS.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+       <!--Custom section--> 
+<!-- FIXED BUTTON COMPONENT -->
+    <!-- <div class="fixed-btn">
+            <div class="buttons">
+                <ul>
+                    <li>
+                        <a href="store-locator.html">store locator</a> 
+                    </li>
+                    <br>
+                    <li>
+                        <a href="store-locator.html">order now</a> 
+                    </li>
+                </ul>
+            </div>
+    </div> -->
+    <!-- FIXED BUTTON COMPONENT -->
+
+        <!-- ::::::  Start Testimonial Section  ::::::  -->
+        <div class="testimonial m-t-100 pos-relative">
+            <div class="testimonial__bg">
+                <img src="assets/img/testimonial/about-bg.png" alt="">
+            </div>
+            <div class="testimonial__content pos-absolute absolute-center text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="section-content__inner">
+                                <h2>About</h2> 
+                                <img class="logo-small" src="assets/img/logo/logo-metto.png" alt="metto-logo">
+                            </div>
+                            <div class="testimonial__slider default-slider">
+                                <div class="testimonial__content--slider ">
+                                    <div class="testimonial__single">
+                                        <p class="testimonial__desc">Metto is a Growing Supermarket Chain in Odisha. Each Metto Store stocks Grocery, Snacks & beverages, Personal Care, Plastic, Utensils & Many more. Metto has always been known for its Best Customer Service Approach.</p>
+                                        <!--<div class="testimonial__info">
+                                            <img class="testimonial__info--user" src="assets/img/testimonial/azim-founder.png" alt="">
+                                            <h5 class="testimonial__info--desig m-t-20">Mr. Azim Mohammad <br>Founder</br> </h5>
+                                        </div>-->
+                                    </div>
+                                </div>
+                                <!-- <div class="testimonial__content--slider ">
+                                    <div class="testimonial__single">
+                                        <p class="testimonial__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                        <div class="testimonial__info">
+                                            <img class="testimonial__info--user" src="assets/img/testimonial/testimonial-home-1-img-2.png" alt="">
+                                            <h5 class="testimonial__info--desig m-t-20">Torvi / <span>C0O</span> </h5>
+                                        </div>
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ::::::  End Testimonial Section  ::::::  -->
+
+        <!-- ::::::  Start Mission Vision  ::::::  -->
+        <div class="banner m-t-30">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 col-12">
+                        <div class="banner__box">
+                            <!-- Start Single Banner Item -->
+                            <div class="banner__box--single banner__box--single-text-style-1 pos-relative">
+                                <a href="#" class="banner__link">
+                                    <img src="assets/img/banner/size-wide/our-mission.png" alt="" class="banner__img">
+                                </a>
+                                <div class="banner__content banner__content--center pos-absolute">
+                                    <!-- <h6 class="banner__title  font--regular letter-spacing--4  text-center m-b-10">Green Vegetable</h6> -->
+                                    <h2 class="banner__title banner__title--large font--medium letter-spacing--4  text-uppercase">OUR MISSION</h2>
+                                    <h6 class="banner__title font--regular m-b-20">To deliver quality products to customers at an affordable price & ensure the highest standards of customer service across all platforms.</h6>
+                                </div>
+                            </div> <!-- End Single Banner Item -->
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-12">
+                        <div class="banner__box">
+                            <!-- Start Single Banner Item -->
+                            <div class="banner__box--single banner__box--single-text-style-1 pos-relative">
+                                <a href="#" class="banner__link">
+                                    <img src="assets/img/banner/size-wide/our-vision.png" alt="" class="banner__img">
+                                </a>
+                                <div class="banner__content banner__content--center pos-absolute">
+                                    <!-- <h6 class="banner__title  font--regular letter-spacing--4  text-center m-b-10">Green Vegetable</h6> -->
+                                    <h2 class="banner__title banner__title--large font--medium letter-spacing--4  text-uppercase">OUR VISION</h2>
+                                    <h6 class="banner__title font--regular m-b-20">To set a benchmark for supermarkets in Odisha by bringing Outlets across major centers (i.e. Tier I & II Cities) in the State.</h6>
+                                </div>
+                            </div> <!-- End Single Banner Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- ::::::  End Mission Vision  ::::::  -->
+
+        <!-- ::::::  Start  Our Presence  ::::::  -->
+        <div class="blog m-t-100">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                         <!-- Start Section Title -->
+                        <div class="section-content section-content--border m-b-35">
+                            <h5 class="section-content__title">Our Presence</h5>
+                        </div>  <!-- End Section Title -->
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="default-slider default-slider--hover-bg-red">
+                            <div class="blog-feed-slider-3grid default-slider gap__col--30 ">
+                                <!-- Start Single Store Content -->
+                                <div class="blog-feed">
+                                    <!-- Store Image -->
+                                    <div class="blog-feed__img-box">
+                                        <a href="#" class="blog-feed__img--link">
+                                            <img class="img-fluid" src="assets/img/blog/feed/blog-feed-home-1-img-1.jpg" alt="">
+                                        </a>
+                                    </div> 
+                                    <!-- End  Store Image -->
+                                    <!-- Start  Store Content -->
+                                    <div class="blog-feed__content ">
+                                        <a href="#" class="blog-feed__link">Metto Supermarket</a>
+                                        
+                                       <!--<div class="blog-feed__post-meta">
+                                            By
+                                            <a class="blog-feed__post-meta--link" href="blog-grid-sidebar-left.html"><span class="blog-feed__post-meta--author">Partner 2020 /</span></a>
+                                            <a class="blog-feed__post-meta--link" href="blog-grid-sidebar-left.html"><span class="blog-feed__post-meta--date">July 23, 2020</span></a>
+                                            
+                                        </div>-->
+                                        <p class="blog-feed__excerpt">Metto, Shelter Chhak, Near IG Women’s College, Cuttack- 753008
+                                        </p>
+                                        <a href="https://g.co/kgs/3DKdG4j" class="btn btn--small btn--radius btn--green btn--green-hover-black font--regular text-uppercase text-capitalize">Get Directions</a>
+                                    </div>
+                                </div> 
+                                <!-- End Single Store Content -->
+
+
+                                <!-- Start Single Store Content -->
+                                <div class="blog-feed">
+                                    <!-- Store Image -->
+                                    <div class="blog-feed__img-box">
+                                        <a href="https://g.co/kgs/6MzuCRP" class="blog-feed__img--link">
+                                            <img class="img-fluid" src="assets/img/blog/feed/blog-feed-home-1-img-1.jpg" alt="">
+                                        </a>
+                                    </div> 
+                                    <!-- End  Store Image -->
+                                    <!-- Start  Store Content -->
+                                    <div class="blog-feed__content ">
+                                        <a href="#" class="blog-feed__link">Metto Supermarket</a>
+                                        
+                                       <!--<div class="blog-feed__post-meta">
+                                            By
+                                            <a class="blog-feed__post-meta--link" href="blog-grid-sidebar-left.html"><span class="blog-feed__post-meta--author">Partner 2020 /</span></a>
+                                            <a class="blog-feed__post-meta--link" href="blog-grid-sidebar-left.html"><span class="blog-feed__post-meta--date">July 23, 2020</span></a>
+                                            
+                                        </div>-->
+                                        <p class="blog-feed__excerpt">Metto, CDA-9 Road, Cuttack- 753014</p>
+                                        <br>
+                                        <a href="https://g.co/kgs/zDmMjmW" class="btn btn--small btn--radius btn--green btn--green-hover-black font--regular text-uppercase text-capitalize">Get Directions</a>
+                                    </div>
+                                </div> 
+                                <!-- End Single Store Content -->
+
+                                <!-- Start Single Store Content -->
+                                <div class="blog-feed">
+                                    <!-- Store Image -->
+                                    <div class="blog-feed__img-box">
+                                        <a href="blog-single-sidebar-left.html" class="blog-feed__img--link">
+                                            <img class="img-fluid" src="assets/img/blog/feed/blog-feed-home-1-img-1.jpg" alt="">
+                                        </a>
+                                    </div> 
+                                    <!-- End  Store Image -->
+                                    <!-- Start  Store Content -->
+                                    <div class="blog-feed__content ">
+                                        <a href="#" class="blog-feed__link">Metto Supermarket</a>
+                                        
+                                       <!--<div class="blog-feed__post-meta">
+                                            By
+                                            <a class="blog-feed__post-meta--link" href="blog-grid-sidebar-left.html"><span class="blog-feed__post-meta--author">Partner 2020 /</span></a>
+                                            <a class="blog-feed__post-meta--link" href="blog-grid-sidebar-left.html"><span class="blog-feed__post-meta--date">July 23, 2020</span></a>
+                                            
+                                        </div>-->
+                                        <p class="blog-feed__excerpt">Metto, GGP Colony, Palasoni Bridge, Rasulgarh, Bhubaneswar- 751001
+                                        </p>
+                                        <a href="https://g.co/kgs/6MzuCRP" class="btn btn--small btn--radius btn--green btn--green-hover-black font--regular text-uppercase text-capitalize">Get Directions</a>
+                                    </div>
+                                </div> 
+                                <!-- End Single Store Content -->
+
+                                <!-- Start Single Store Content -->
+                                <div class="blog-feed">
+                                    <!-- Store Image -->
+                                    <div class="blog-feed__img-box">
+                                        <a href="#" class="blog-feed__img--link">
+                                            <img class="img-fluid" src="assets/img/blog/feed/blog-feed-home-1-img-1.jpg" alt="">
+                                        </a>
+                                    </div> 
+                                    <!-- End  Store Image -->
+                                    <!-- Start  Store Content -->
+                                    <div class="blog-feed__content ">
+                                        <a href="#" class="blog-feed__link">Metto Supermarket</a>
+                                        
+                                       <!--<div class="blog-feed__post-meta">
+                                            By
+                                            <a class="blog-feed__post-meta--link" href="blog-grid-sidebar-left.html"><span class="blog-feed__post-meta--author">Partner 2020 /</span></a>
+                                            <a class="blog-feed__post-meta--link" href="blog-grid-sidebar-left.html"><span class="blog-feed__post-meta--date">July 23, 2020</span></a>
+                                            
+                                        </div>-->
+                                        <p class="blog-feed__excerpt">Metto, Mahanadi Vihar, Near HDFC Bank, Cuttack
+                                        </p>
+                                        <br>
+                                        <a href="#" class="btn btn--small btn--radius btn--green btn--green-hover-black font--regular text-uppercase text-capitalize">Get Directions</a>
+                                    </div>
+                                </div> 
+                                <!-- End Single Store Content -->
+
+                                <!-- Start Single Store Content -->
+                                <div class="blog-feed">
+                                    <!-- Store Image -->
+                                    <div class="blog-feed__img-box">
+                                        <a href="#" class="blog-feed__img--link">
+                                            <img class="img-fluid" src="assets/img/blog/feed/blog-feed-home-1-img-1.jpg" alt="">
+                                        </a>
+                                    </div> 
+                                    <!-- End  Store Image -->
+                                    <!-- Start  Store Content -->
+                                    <div class="blog-feed__content ">
+                                        <a href="#" class="blog-feed__link">Metto Supermarket</a>
+                                        
+                                       <!--<div class="blog-feed__post-meta">
+                                            By
+                                            <a class="blog-feed__post-meta--link" href="blog-grid-sidebar-left.html"><span class="blog-feed__post-meta--author">Partner 2020 /</span></a>
+                                            <a class="blog-feed__post-meta--link" href="blog-grid-sidebar-left.html"><span class="blog-feed__post-meta--date">July 23, 2020</span></a>
+                                            
+                                        </div>-->
+                                        <p class="blog-feed__excerpt">Metto, Metro Avenue Apartments, Chauliaganj, Cuttack- 753004</p>
+                                        <a href="#" class="btn btn--small btn--radius btn--green btn--green-hover-black font--regular text-uppercase text-capitalize">Get Directions</a>
+                                    </div>
+                                </div> 
+                                <!-- End Single Store Content -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- ::::::  End  Our Presence   ::::::  -->
+
+
+        <!-- ::::::  Start  Company Logo Section  ::::::  -->
+        <div hidden>
+            <div class="company-logo m-t-100">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="company-logo__area default-slider">
+                                <!-- Start Single Company Logo Item -->
+                                <div class="company-logo__item">
+                                    <a href="#" class="company-logo__link">
+                                        <img src="assets/img/company-logo/company-logo-1.png" alt="" class="company-logo__img">
+                                    </a>
+                                </div> <!-- End Single Company Logo Item -->
+                                <!-- Start Single Company Logo Item -->
+                                <div class="company-logo__item">
+                                    <a href="#" class="company-logo__link">
+                                        <img src="assets/img/company-logo/company-logo-2.png" alt="" class="company-logo__img">
+                                    </a>
+                                </div> <!-- End Single Company Logo Item -->
+                                <!-- Start Single Company Logo Item -->
+                                <div class="company-logo__item">
+                                    <a href="#" class="company-logo__link">
+                                        <img src="assets/img/company-logo/company-logo-3.png" alt="" class="company-logo__img">
+                                    </a>
+                                </div> <!-- End Single Company Logo Item -->
+                                <!-- Start Single Company Logo Item -->
+                                <div class="company-logo__item">
+                                    <a href="#" class="company-logo__link">
+                                        <img src="assets/img/company-logo/company-logo-4.png" alt="" class="company-logo__img">
+                                    </a>
+                                </div> <!-- End Single Company Logo Item -->
+                                <!-- Start Single Company Logo Item -->
+                                <div class="company-logo__item">
+                                    <a href="#" class="company-logo__link">
+                                        <img src="assets/img/company-logo/company-logo-5.png" alt="" class="company-logo__img">
+                                    </a>
+                                </div> <!-- End Single Company Logo Item -->
+                                <!-- Start Single Company Logo Item -->
+                                <div class="company-logo__item">
+                                    <a href="#" class="company-logo__link">
+                                        <img src="assets/img/company-logo/company-logo-6.png" alt="" class="company-logo__img">
+                                    </a>
+                                </div> <!-- End Single Company Logo Item -->
+                                <!-- Start Single Company Logo Item -->
+                                <div class="company-logo__item">
+                                    <a href="#" class="company-logo__link">
+                                        <img src="assets/img/company-logo/company-logo-7.png" alt="" class="company-logo__img">
+                                    </a>
+                                </div> <!-- End Single Company Logo Item -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ::::::  End  Company Logo Section  ::::::  -->
+
+    </main>  <!-- :::::: End MainContainer Wrapper :::::: -->
+
+    <!-- ::::::  Start  Footer ::::::  -->
+    <footer class="footer m-t-100">
+        <div class="container">
+            <!-- Start Footer Top Section --> 
+            <div class="footer__top">
+                <div class="row">
+                    <div class="col-lg-4 col-md-5">
+                        <div class="footer__about">
+                            <div class="footer__logo">
+                                <a href="index.html" class="footer__logo-link">
+                                    <img src="assets/img/logo/logo-metto.png" alt="" class="footer__logo-img">
+                                </a>
+                            </div>
+                            <ul class="footer__address">
+                                <!-- <li class="footer__address-item"><i class="fa fa-home"></i>Shelter Chhak, Ground floor, Metro Corner Apartment, Cuttack - 753002.</li>
+                                <li class="footer__address-item"><i class="fa fa-home"></i>CDA-9, Plot No.: 6B/933, Sector-9, Markat Nagar, Cuttack, 753014.</li> -->
+                                <li class="footer__address-item"><i class="fa fa-phone-alt"></i>6371212152</li>
+                                <li class="footer__address-item"><i class="fa fa-envelope"></i>support@mettosupermarket.com</li>
+                            </ul>
+                            <ul class="footer__social-nav">
+                                <li class="footer__social-list"><a href="https://m.facebook.com/mettosupermarketofficial/" class="footer__social-link"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="footer__social-list"><a href="https://www.linkedin.com/posts/metto-supermarket_awarded-as-best-supermarket-chain-in-east-activity-7245389728185802752-Nb3b?utm_source=share&utm_medium=member_android" class="footer__social-link"><i class="fab fa-linkedin"></i></a></li>
+                                <li class="footer__social-list"><a href="https://x.com/MettoSuprmarket?t=PbOzywkvPpH1h7M6cZrLqg&s=08" class="footer__social-link"><i class="fab fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                        <div class="footer__menu">
+                    <!--        <h4 class="footer__nav-title footer__nav-title--dash footer__nav-title--dash-red">CDA BRANCH</h4>-->
+                    <!--        <li class="footer__address-item"><i class="fa fa-home"></i>CDA-9, Plot No.: 6B/933, Sector-9, Markat Nagar, Cuttack, 753014.</li>-->
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12"> 
+                        <div class="footer__menu">
+                            <h4 class="footer__nav-title footer__nav-title--dash footer__nav-title--dash-red">HEAD OFFICE</h4>
+                            <li class="footer__address-item"><i class="fa fa-home"></i>Shelter Chhak, Ground floor, Metro Corner Apartment, Cuttack - 753002.</li>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                        <div class="footer__menu">
+                            <h4 class="footer__nav-title footer__nav-title--dash footer__nav-title--dash-red">OPENING TIME</h4>
+                            <ul class="footer__nav">
+                            <li class="footer__list">Mon to Sun: 9AM - 9PM</li>
+                            <!--    <li class="footer__list">Sat: 9AM-8PM</li>-->
+                            <!--    <li class="footer__list">Suns: 14hPM-18hPM</li>-->
+                            <!--    <li class="footer__list">Mon - Fri: 8AM - 10PM</li>-->
+                            <!--    <li class="footer__list">We Work All The Holidays</li>-->
+                            <!--    <li class="footer__list"><a href="" class="footer__link font--bold">Download our app</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-2 col-md-3 col-sm-6 col-12">
+                        <div class="footer__menu">
+                            <h4 class="footer__nav-title footer__nav-title--dash footer__nav-title--dash-red">SITE PAGES</h4>
+                            <li class="footer__list"><a href="index.html">HOME</a></li>
+                            <li class="footer__list"><a href="about.html">ABOUT US</a></li>
+                            <!-- <li class="footer__list"><a href="#">SHOP NOW</a></li>
+                            <li class="footer__list"><a href="franchise.html">FRANCHISE</a></li> -->
+                            <li class="footer__list"><a href="contact.html">CONTACT US</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <!-- End Footer Top Section -->
+            <!-- Start Footer Bottom Section --> 
+            <div class="footer__bottom">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6 col-12">
+                        <!-- Start Footer Copyright Text -->
+                        <div class="footer__copyright-text">
+                            <p>Copyright &copy; <a href="https://mettosupermarket.com/">Metto Super Market</a>. All Rights Reserved</p>
+                        </div> <!-- End Footer Copyright Text -->
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                         <!-- Start Footer Payment Logo -->
+                        <!--<div class="footer__payment">-->
+                        <!--    <a href="#" class="footer__payment-link">-->
+                        <!--        <img src="assets/img/company-logo/payment.png" alt="" class="footer__payment-img">-->
+                        <!--    </a>-->
+                        </div>  <!-- End Footer Payment Logo -->
+                    </div>
+                </div>
+            </div> <!-- End Footer Bottom Section --> 
+        </div>
+    </footer> 
+    <!-- ::::::  End  Footer ::::::  -->
+    
+    <!-- material-scrolltop button -->
+    <button class="material-scrolltop" type="button"></button>
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/vendor/modernizr-3.7.1.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugins JS Files -->
+    <script src="assets/js/plugin/slick.min.js"></script>
+    <script src="assets/js/plugin/jquery.countdown.min.js"></script>
+    <script src="assets/js/plugin/material-scrolltop.js"></script>
+    <script src="assets/js/plugin/price_range_script.js"></script>
+    <script src="assets/js/plugin/in-number.js"></script>
+    <script src="assets/js/plugin/jquery.elevateZoom-3.0.8.min.js"></script>
+    <script src="assets/js/plugin/venobox.min.js"></script>
+    <script src="assets/js/plugin/jquery.waypoints.js"></script>
+    <script src="assets/js/plugin/jquery.lineProgressbar.js"></script>
+
+    <!-- Use the minified version files listed below for better performance and remove the files listed above -->
+    <!-- <script src="assets/js/vendor/vendor.min.js"></script>
+    <script src="assets/js/plugin/plugins.min.js"></script> -->
+
+    <!-- Main js file that contents all jQuery plugins activation. -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
